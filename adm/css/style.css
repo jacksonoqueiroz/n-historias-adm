@@ -1,0 +1,153 @@
+.jumbotron {
+    padding: 10px 2rem;
+}
+
+.alert-danger{
+    margin-top: -10px;
+}
+
+.logado span{
+	text-align: left;
+}
+
+.navbar-collapse {
+    margin-top: 0;
+    margin-left: 35px;
+}
+.img-perfil img{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-perfil{
+   color: white;
+   padding-left: 10px;
+   margin-top: 8px;
+   margin-left: 100px;
+}
+.menu-perfil img {
+    width: 30px; 
+    height: 30px;  
+    border-radius: 50%;
+    position: relative;
+    margin-left: 20px;
+}
+.menu-perfil a{
+    text-decoration: none;
+    color: #fff;
+}
+.card{
+    align-items: center;
+}
+
+.card{
+    width: 146px;
+    height: 193px;
+}
+.row{
+    margin-right: -25px;
+    margin-left: 10px;
+}
+
+.img-lista img{
+    width: 100px; 
+    height: 100px;  
+    border-radius: 50%;
+}
+
+.lista td th{
+    vertical-align: center;
+}
+.card_text p {
+    font-family: arial;
+}
+.alerta-sucesso {
+    margin-top: -30px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    color: green;
+}
+.cadastro{
+    margin-top: 25px;
+    margin-left: -20px;
+    margin-right: -50px;
+}
+/*-----------------Detalhes--------------------*/
+.img-adm img{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin-left: 150px;
+}
+/*---------------------Editar imagem-------------------------*/
+.img-adm:hover .edit-img {
+    display: block;
+}
+.edit-img {
+    padding-top: 7px;
+    padding-right: 7px;
+    position: absolute;
+    top: 0;
+    display: none;
+    margin-left: 345px;
+}
+.img-logo:hover .edit-img {
+    display: block;
+}
+
+.img-logo img{
+    width: 90%;
+    margin-left: 120px;
+    background-color: #000;
+    padding: 10px;
+}
+.titulo-adm {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.titulo-adm p{
+    margin-left: -180px;
+}
+.titulo-obra {
+    margin-top: -35px;
+    margin-left: 150px;
+}
+.descricao-adm {
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+@media screen and (max-width: 480px){
+.menu-perfil{
+      margin-left: 0;
+      padding-left: 0px;
+      margin-top: 10px;
+}
+.card-group .card{
+    margin-left: 55px;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 481px){
+
+.menu-perfil{
+        margin-left: 0;
+        padding-left: 0px;
+        margin-top: 10px;
+}
+.img-lista{
+    width: 70px; 
+    height: 30px;  
+    border-radius: 50%;
+}
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+
+    
+        
+    
+}

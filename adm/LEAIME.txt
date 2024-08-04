@@ -1,0 +1,2 @@
+Este sistema tem url amigaveis, ficando um acesso melhor, sem mostrar a extensão da página.
+Para funcionar os links, mude o endereço no config na pasta config/config.php, ao publicar o sistema também tire o localhost pelo nome da página que será publicado não esquecendo a barra no final.

@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans%3Awght%40400%3B600&display=swap);
+
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e3eaf0;
+    color: #747d89;
+    font-size: 16px;
+    padding: 2rem 0;
+    min-height: 100vh;
+    margin-top: -40px;
+}
+
+h2 {
+    color: #000;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h2::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background-color: #7ac412;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider .card {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 5px -3px rgba(0,0,0,0.38);
+    box-shadow: 4px 4px 5px -3px rgba(0,0,0,0.38);
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider .card .like {
+    background-image: url('https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png');
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    display: flex;
+    place-self: flex-end;
+    margin-bottom: 0.3rem;
+    opacity: 0.2;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.slider .card .like:hover {
+    background-image: url('https://raw.githubusercontent.com/Cassianosch/programador.cs-reels/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png');
+    opacity: 1; 
+}
+
+.slider .card img.alunos {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .title {
+   font-weight: 300;
+   font-size: 20px;
+   margin: 5px;
+   overflow: hidden; /* encurta o texto em 2 linhas e põe três pontos no final*/
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+}
+
+.slider .card .rating {
+    color: #ffc002;
+    font-size: 20px;
+    margin: 0 0 5px;
+ }
+ 
+ .slider .card .price {
+    display: flex;
+    gap: 10px;
+    margin: 0.5rem 0;
+ }
+ 
+ .slider .card .price h5:first-child {
+   font-weight: 400;
+   text-decoration: line-through;   
+   color: #d0d2d6;
+ }
+
+ .slider .card .price h5:last-child {
+    font-weight: 900;
+    color: #747d89;
+  }
+
+  .slider .card a.button {
+      border: 1px solid #7ac402 ;
+      border-radius: 30px;
+    color: #7ac402;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s all ease;
+  }
+
+  .slider .card a.button:hover {
+    background-color: #7ac402 ;
+    color: #fff;
+}
+
+.but-slider {
+    background-color: red;
+}
+
+.slick-next {
+    margin-right: 55px;
+    margin-top: 200px;
+    background-color: red !important;
+}
+.slick-arrow {
+    font-size: 40px;
+    background-color: red !important;
+}
+
+.slick-prev {
+    background-color: red !important;
+    margin-top: 200px;
+    margin-left: 55px;
+}
+
+
+@media screen and (max-width: 480px){
+
+    html {
+    scrollbar-width: none; /* ParaFirefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+}
+
+html::-webkit-scrollbar {
+    width: 0px; /* Para Chrome, Safari, e Opera */
+}
+   
+.slick-arrow {
+    margin-top: 260px;
+    margin-bottom: -80px;
+    background-color: transparent !important;
+    overflow-x: scroll;
+}
+
+.slick-next {
+    background-color: transparent !important;
+}
+}
